@@ -41,6 +41,7 @@ jobs:
             profile: minimal
             override: true
             components: rustfmt
+            target: thumbv7m-none-eabi
 
         - name: Install xmllint
           run: |
