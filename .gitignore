@@ -10,6 +10,7 @@ mmaps/
 /venv
 .devcontainer
 .OLD/**
+.cargo/
 
 # automatically generated crates
 /atsam*/
