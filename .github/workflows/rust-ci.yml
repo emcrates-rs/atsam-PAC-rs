@@ -1,0 +1,68 @@
+name: Rust CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  ci:
+      name: CI
+      runs-on: ubuntu-latest
+      needs: [check]
+      steps:
+        - name: Done
+          run: exit 0
+  
+  check:
+      name: Check
+      runs-on: ubuntu-latest
+      strategy:
+        matrix:
+          crate:
+            - sam3x8e
+          
+      env:
+        CRATES: ${{ matrix.crate }}
+        CARGO_INCREMENTAL: 0
+        SVDTOOLS: svdtools
+        
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v3
+
+        - name: Install Rust
+          uses: actions-rs/toolchain@v1
+          with:
+            toolchain: stable
+            profile: minimal
+            override: true
+            components: rustfmt
+
+        - name: Install xmllint
+          run: |
+            sudo apt-get update
+            sudo apt-get install libxml2-utils
+            
+        - name: Create working crate
+          run: make crates
+
+        - name: Install tools
+          run: |
+            ./scripts/tool_install.sh svdtools
+            ./scripts/tool_install.sh svd2rust
+            
+        - name: Patch SVDs
+          run: make -j2 patch
+
+        - name: Check SVDs
+          run: make lint
+
+        - name: Build PACs
+          run: make -j2 svd2rust
+
+        - name: Check PACs
+          run: make -j2 check
