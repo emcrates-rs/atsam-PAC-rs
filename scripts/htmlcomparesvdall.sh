@@ -4,7 +4,7 @@ set -euxo pipefail
 #AT SAM3 Relatives
 RELATED_1="atsam3"
 mkdir -p html/$RELATED_1
-python3 scripts/htmlcomparesvd.py html/$RELATED_1 svd/atsam3{x8e}.svd.patched
+python3 scripts/htmlcomparesvd.py html/$RELATED_1 svd/atsam3x8e.svd.patched
 sed -i 's#<table>#<p>Only a representative member of each family included; click to view entire family</p><table>#' html/$RELATED_1/index.html
 #sed -i 's#atsam3a#<a href="atsam3a/index.html">ATSAM3A</a>#' html/$RELATED_1/index.html
 #sed -i 's#atsam3n#<a href="atsam3n/index.html">ATSAM3N</a>#' html/$RELATED_1/index.html
