@@ -1,0 +1,30 @@
+[package]
+edition = "2018"
+name = "atsam3x"
+version = "0.1.0"
+authors = ["Michael Berger <34484044+leachiml@users.noreply.github.com>", "atsam3X-PAC Contributors"]
+description = "Device support crates for ATSAM3X devices"
+repository = "https://github.com/emcrates-rs/atsam3X-PAC"
+readme = "README.md"
+keywords = ["atsam", "svd2rust", "no_std", "embedded"]
+categories = ["embedded", "no-std"]
+license = "MIT/Apache-2.0"
+
+[dependencies]
+bare-metal = "1.0.0"
+vcell = "0.1.3"
+cortex-m = "0.7.2"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = ">=0.6.15,<0.8"
+
+[package.metadata.docs.rs]
+features = ['rt', 'atsam3x4c', 'atsam3x4e', 'atsam3x8c', 'atsam3x8e']
+default-target = "thumbv7m-none-eabi"
+targets = []
+
+[features]
+default = ["rt"]
+rt = ["cortex-m-rt/device"]
+atsam3x8e = []

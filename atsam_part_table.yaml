@@ -1,0 +1,49 @@
+# This file contains a table of all supported ATSAM microcontrollers.
+#
+# It lists them by family (which corresponds to a crate),
+# then by the "device" in that family (corresponds to an SVD file,
+# and to a module within each crate).
+#
+# For each device, there is a link to the product page and reference manual,
+# the reference manual ID, the title from the reference manual,
+# and a list of actual members of this family (without size/package codes).
+#
+# This data is used to generate more informative crate READMEs.
+
+atsam3x:
+  atsam3x4c:
+    url: https://www.microchip.com/en-us/product/ATSAM3X4C
+    rm: Datasheet
+    rm_title: SAM3X / SAM3A Series
+    rm_url: https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-11057-32-bit-Cortex-M3-Microcontroller-SAM3X-SAM3A_Datasheet.pdf
+    members:
+      - ATSAM3X4CA-CU
+      - ATSAM3X4CA-AUR
+      - ATSAM3X4CA-AU
+
+  atsam3x4e:
+    url: https://www.microchip.com/en-us/product/ATSAM3X4E
+    rm: Datasheet
+    rm_title: SAM3X / SAM3A Series
+    rm_url: https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-11057-32-bit-Cortex-M3-Microcontroller-SAM3X-SAM3A_Datasheet.pdf
+    members:
+      - ATSAM3X4EA-CU
+      - ATSAM3X4EA-AU
+
+  atsam3x8c:
+    url: https://www.microchip.com/en-us/product/ATSAM3X8C
+    rm: Datasheet
+    rm_title: SAM3X / SAM3A Series
+    rm_url: https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-11057-32-bit-Cortex-M3-Microcontroller-SAM3X-SAM3A_Datasheet.pdf
+    members:
+      - ATSAM3X8CA-CU
+      - ATSAM3X8CA-AU
+
+  atsam3x8e:
+    url: https://www.microchip.com/en-us/product/ATSAM3X8E
+    rm: Datasheet
+    rm_title: SAM3X / SAM3A Series
+    rm_url: https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-11057-32-bit-Cortex-M3-Microcontroller-SAM3X-SAM3A_Datasheet.pdf
+    members:
+      - ATSAM3X8EA-CU
+      - ATSAM3X8EA-AU
