@@ -1,6 +1,5 @@
 
 # ATSAM Peripheral Access Crates
-===
 [![CI](https://github.com/stm32-rs/stm32-rs/workflows/CI/badge.svg?branch=master)](https://github.com/stm32-rs/stm32-rs)
 
 This repository provides Rust device support crates for all ATSAM (currently only ATSAM3X)

@@ -3,9 +3,13 @@
 **/*.rs.bk
 **/Cargo.lock
 .deps/
-*/src/stm32*/
+*/src/atsam*/
 */src/generic.rs
 html/
 mmaps/
 /venv
 .devcontainer
+.OLD/**
+
+# automatically generated crates
+/atsam*/

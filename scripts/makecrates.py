@@ -38,7 +38,7 @@ authors = ["Michael Berger <34484044+leachiml@users.noreply.github.com>", "atsam
 description = "Device support crates for {family} devices"
 repository = "https://github.com/emcrates-rs/atsam3X-PAC"
 readme = "README.md"
-keywords = ["atsam", "svd2rust", "no_std", "embedded"]
+keywords = ["atsam", "svd2rust", "no_std", "embedded", "arm", "cortex-m"]
 categories = ["embedded", "no-std"]
 license = "MIT/Apache-2.0"
 
