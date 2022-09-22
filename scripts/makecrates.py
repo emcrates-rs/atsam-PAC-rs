@@ -26,7 +26,7 @@ CRATE_DOC_FEATURES = {
 }
 
 CRATE_DOC_TARGETS = {
-    "atsam3x": "thumbv7m-none-eabi",
+    "atsam3x": "thumbv7m-none-eabi"
 }
 
 CARGO_TOML_TPL = """\
