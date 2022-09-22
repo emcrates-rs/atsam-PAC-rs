@@ -23,6 +23,15 @@
 mod generic;
 pub use self::generic::*;
 
+#[cfg(feature = "atsam3x4c")]
+pub mod atsam3x4c;
+
+#[cfg(feature = "atsam3x4e")]
+pub mod atsam3x4e;
+
+#[cfg(feature = "atsam3x8c")]
+pub mod atsam3x8c;
+
 #[cfg(feature = "atsam3x8e")]
 pub mod atsam3x8e;
 

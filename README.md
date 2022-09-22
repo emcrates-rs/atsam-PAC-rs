@@ -1,9 +1,13 @@
-sam3x8e
+
+# ATSAM Peripheral Access Crates
 ===
-Rust crate to support Atmel's SAM3X8E microcontroller. The SAM3X8E is used on the Arduino Due board.
-This source was created with the [svd2rust](https://docs.rs/svd2rust/) tool (version 0.14.0).
+[![CI](https://github.com/stm32-rs/stm32-rs/workflows/CI/badge.svg?branch=master)](https://github.com/stm32-rs/stm32-rs)
 
-You can use this crate for cortex-m, cortex-m-rt and cortex-m-rtfm projects.
+This repository provides Rust device support crates for all ATSAM (currently only ATSAM3X)
+microcontrollers, providing a safe API to that device's peripherals using
+[svd2rust] and a community-built collection of patches to the basic SVD files.
+There is one crate per device family, and each supported device is a
+feature-gated module in that crate. These crates are commonly known as
+peripheral access crates or "PACs".
 
-When this library was first created, the svd2rust-tool did not support the Atmel-SVD files, since they sometimes miss ResetValues. I forked the tool and fixed it. A PR was created.
-My version of the svd2rust tool: https://github.com/ammoniak/svd2rust
+[svd2rust]: https://github.com/rust-embedded/svd2rust

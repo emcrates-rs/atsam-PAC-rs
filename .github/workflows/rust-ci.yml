@@ -23,7 +23,7 @@ jobs:
       strategy:
         matrix:
           crate:
-            - sam3x8e
+            - atsam3x
           
       env:
         CRATES: ${{ matrix.crate }}

@@ -16,7 +16,7 @@ compile the device(s) you want. To use, in your Cargo.toml:
 ```toml
 [dependencies.atsam3x]
 version = "0.1.0"
-features = ["atsam3x8e"]
+features = ["atsam3x4c"]
 ```
 
 The `rt` feature is enabled by default and brings in support for `cortex-m-rt`.
@@ -25,9 +25,9 @@ To disable, specify `default-features = false` in `Cargo.toml`.
 In your code:
 
 ```rust
-use atsam3x::atsam3x8e;
+use atsam3x::atsam3x4c;
 
-let mut peripherals = atsam3x8e::Peripherals::take().unwrap();
+let mut peripherals = atsam3x4c::Peripherals::take().unwrap();
 let gpioa = &peripherals.GPIOA;
 gpioa.odr.modify(|_, w| w.odr0().set_bit());
 ```
