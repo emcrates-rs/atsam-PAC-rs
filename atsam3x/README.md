@@ -6,7 +6,7 @@ extensive type-safe support. For more information please see the [main repo].
 Refer to the [documentation] for full details.
 
 [svd2rust]: https://github.com/rust-embedded/svd2rust
-[main repo]: https://github.com/emcrates-rs/atsam3X-PAC
+[main repo]: https://github.com/emcrates-rs/atsam-PAC-rs
 [documentation]: https://docs.rs/atsam3x/latest/atsam3x/
 
 ## Usage

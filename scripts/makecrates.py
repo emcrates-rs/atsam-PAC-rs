@@ -36,7 +36,7 @@ name = "{crate}"
 version = "{version}"
 authors = ["Michael Berger <34484044+leachiml@users.noreply.github.com>", "atsam3X-PAC Contributors"]
 description = "Device support crates for {family} devices"
-repository = "https://github.com/emcrates-rs/atsam3X-PAC"
+repository = "https://github.com/emcrates-rs/atsam-PAC-rs"
 readme = "README.md"
 keywords = ["atsam", "svd2rust", "no_std", "embedded", "arm", "cortex-m"]
 categories = ["embedded", "no-std"]
@@ -71,7 +71,7 @@ SRC_LIB_RS_TPL = """\
 //! [svd2rust/#peripheral-api](https://docs.rs/svd2rust/{svd2rust_version}/svd2rust/#peripheral-api)
 //!
 //! For more details see the README here:
-//! [atsam3X-PAC](https://github.com/emcrates-rs/atsam3X-PAC)
+//! [atsam-PAC](https://github.com/emcrates-rs/atsam-PAC-rs)
 //!
 //! This crate supports all {family} devices; for the complete list please
 //! see:
@@ -79,7 +79,7 @@ SRC_LIB_RS_TPL = """\
 //!
 //! Due to doc build limitations, not all devices may be shown on docs.rs;
 //! a representative few have been selected instead. For a complete list of
-//! available registers and fields see: [atsam3X-PAC Device Coverage](https://github.com/emcrates-rs/atsam3X-PAC)
+//! available registers and fields see: [atsam-PAC Device Coverage](https://emcrates-rs.github.io/atsam-PAC-rs/)
 
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
@@ -100,7 +100,7 @@ extensive type-safe support. For more information please see the [main repo].
 Refer to the [documentation] for full details.
 
 [svd2rust]: https://github.com/rust-embedded/svd2rust
-[main repo]: https://github.com/emcrates-rs/atsam3X-PAC
+[main repo]: https://github.com/emcrates-rs/atsam-PAC-rs
 [documentation]: https://docs.rs/{crate}/latest/{crate}/
 
 ## Usage
