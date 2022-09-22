@@ -1,6 +1,6 @@
 
 # ATSAM Peripheral Access Crates
-[![CI](https://github.com/emcrates-rs/atsam-PAC-rs/workflows/CI/badge.svg?branch=master)](https://github.com/emcrates-rs/atsam-PAC-rs)
+[![Rust CI](https://github.com/emcrates-rs/atsam-PAC-rs/actions/workflows/rust-ci.yml/badge.svg?branch=master)](https://github.com/emcrates-rs/atsam-PAC-rs/actions/workflows/rust-ci.yml)
 
 This repository provides Rust device support crates for all ATSAM (currently only ATSAM3X)
 microcontrollers, providing a safe API to that device's peripherals using
