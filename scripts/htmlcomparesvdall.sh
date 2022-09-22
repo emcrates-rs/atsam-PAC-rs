@@ -12,17 +12,17 @@ sed -i 's#<table>#<p>Only a representative member of each family included; click
 #sed -i 's#atsam3u#<a href="atsam3u/index.html">ATSAM3U</a>#' html/$RELATED_1/index.html
 sed -i 's#atsam3x8e-AU#<a href="atsam3x/index.html">ATSAM3X8E-AU</a>#' html/$RELATED_1/index.html
 
-mkdir -p html/$RELATED_1/atsam3a
-python3 scripts/htmlcomparesvd.py html/$RELATED_1/atsam3a svd/atsam3a*.svd.patched
+#mkdir -p html/$RELATED_1/atsam3a
+#python3 scripts/htmlcomparesvd.py html/$RELATED_1/atsam3a svd/atsam3a*.svd.patched
 
-mkdir -p html/$RELATED_1/atsam3n
-python3 scripts/htmlcomparesvd.py html/$RELATED_1/atsam3n svd/atsam3n*.svd.patched
+#mkdir -p html/$RELATED_1/atsam3n
+#python3 scripts/htmlcomparesvd.py html/$RELATED_1/atsam3n svd/atsam3n*.svd.patched
 
-mkdir -p html/$RELATED_1/atsam3s
-python3 scripts/htmlcomparesvd.py html/$RELATED_1/atsam3s svd/atsam3s*.svd.patched
+#mkdir -p html/$RELATED_1/atsam3s
+#python3 scripts/htmlcomparesvd.py html/$RELATED_1/atsam3s svd/atsam3s*.svd.patched
 
-mkdir -p html/$RELATED_1/atsam3u
-python3 scripts/htmlcomparesvd.py html/$RELATED_1/atsam3u svd/atsam3u*.svd.patched
+#mkdir -p html/$RELATED_1/atsam3u
+#python3 scripts/htmlcomparesvd.py html/$RELATED_1/atsam3u svd/atsam3u*.svd.patched
 
 mkdir -p html/$RELATED_1/atsam3x
 python3 scripts/htmlcomparesvd.py html/$RELATED_1/atsam3x svd/atsam3x*.svd.patched
