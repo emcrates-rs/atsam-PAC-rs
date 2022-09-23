@@ -31,10 +31,10 @@ CRATE_DOC_TARGETS = {
 
 CARGO_TOML_TPL = """\
 [package]
-edition = "2018"
+edition = "2021"
 name = "{crate}"
 version = "{version}"
-authors = ["Michael Berger <34484044+leachiml@users.noreply.github.com>", "atsam3X-PAC Contributors"]
+authors = ["Michael Berger <34484044+leachiml@users.noreply.github.com>", "atsam-PAC Contributors"]
 description = "Device support crates for {family} devices"
 repository = "https://github.com/emcrates-rs/atsam-PAC-rs"
 readme = "README.md"
@@ -46,10 +46,7 @@ license = "MIT/Apache-2.0"
 bare-metal = "1.0.0"
 vcell = "0.1.3"
 cortex-m = "0.7.2"
-
-[dependencies.cortex-m-rt]
-optional = true
-version = ">=0.6.15,<0.8"
+cortex-m-rt = {{version = ">=0.6.15,<0.8", optional = true}}
 
 [package.metadata.docs.rs]
 features = {docs_features}
