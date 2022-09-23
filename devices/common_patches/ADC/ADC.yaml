@@ -1,0 +1,326 @@
+
+"ADC":
+  CR:
+    START:
+      NoEffect: [0, "No Effect"]
+      Reset: [1, "Resets the ADC simulating a hardware reset"]
+    SWRST:
+      NoEffect: [0, "No Effect"]
+      Convert: [1, "Begins analog-to-digital conversion"]
+
+  MR:
+    USEQ:
+    TRANSFER:
+    TRACKTIM:
+    ANACH:
+    SETTLING:
+    STARTUP:
+    PRESCAL:
+    FREERUN:
+    FWUP:
+    SLEEP:
+    TRGSEL:
+    TRGEN:
+
+  SEQR1:
+    USCH8:
+    USCH7:
+    USCH6:
+    USCH5:
+    USCH4:
+    USCH3:
+    USCH2:
+    USCH1:
+
+  SEQR2:
+    USCH15:
+    USCH14:
+    USCH13:
+    USCH12:
+    USCH11:
+    USCH10:
+    USCH9:
+
+  CHER:
+    CH15:
+    CH14:
+    CH13:
+    CH12:
+    CH11:
+    CH10:
+    CH9:
+    CH8:
+    CH7:
+    CH6:
+    CH5:
+    CH4:
+    CH3:
+    CH2:
+    CH1:
+    CH0:
+
+  CHDR:
+    CH15:
+    CH14:
+    CH13:
+    CH12:
+    CH11:
+    CH10:
+    CH9:
+    CH8:
+    CH7:
+    CH6:
+    CH5:
+    CH4:
+    CH3:
+    CH2:
+    CH1:
+    CH0:
+
+  CHSR:
+    CH15:
+    CH14:
+    CH13:
+    CH12:
+    CH11:
+    CH10:
+    CH9:
+    CH8:
+    CH7:
+    CH6:
+    CH5:
+    CH4:
+    CH3:
+    CH2:
+    CH1:
+    CH0:
+
+  LCDR:
+    CHNB:
+    LDATA:
+
+  IER:
+    RXBUFF:
+    ENDRX:
+    COMPE:
+      Disabled: [0, ""]
+      Enabled: [1, ""]
+    GOVRE:
+      Disabled: [0, ""]
+      Enabled: [1, ""]
+    DRDY:
+    EOC15:
+    EOC14:
+    EOC13:
+    EOC12:
+    EOC11:
+    EOC10:
+    EOC9:
+    EOC8:
+    EOC7:
+    EOC6:
+    EOC5:
+    EOC4:
+    EOC3:
+    EOC2:
+    EOC1:
+    EOC0:
+
+  IDR:
+    RXBUFF:
+    ENDRX:
+    COMPE:
+      Disabled: [0, ""]
+      Enabled: [1, ""]
+    GOVRE:
+      Disabled: [0, ""]
+      Enabled: [1, ""]
+    DRDY:
+    EOC15:
+    EOC14:
+    EOC13:
+    EOC12:
+    EOC11:
+    EOC10:
+    EOC9:
+    EOC8:
+    EOC7:
+    EOC6:
+    EOC5:
+    EOC4:
+    EOC3:
+    EOC2:
+    EOC1:
+    EOC0:
+
+  IMR:
+    RXBUFF:
+    ENDRX:
+    COMPE:
+      Disabled: [0, ""]
+      Enabled: [1, ""]
+    GOVRE:
+      Disabled: [0, ""]
+      Enabled: [1, ""]
+    DRDY:
+    EOC15:
+    EOC14:
+    EOC13:
+    EOC12:
+    EOC11:
+    EOC10:
+    EOC9:
+    EOC8:
+    EOC7:
+    EOC6:
+    EOC5:
+    EOC4:
+    EOC3:
+    EOC2:
+    EOC1:
+    EOC0:
+
+  ISR:
+    RXBUFF:
+    ENDRX:
+    COMPE:
+      Disabled: [0, ""]
+      Enabled: [1, ""]
+    GOVRE:
+      Disabled: [0, ""]
+      Enabled: [1, ""]
+    DRDY:
+    EOC15:
+    EOC14:
+    EOC13:
+    EOC12:
+    EOC11:
+    EOC10:
+    EOC9:
+    EOC8:
+    EOC7:
+    EOC6:
+    EOC5:
+    EOC4:
+    EOC3:
+    EOC2:
+    EOC1:
+    EOC0:
+
+  OVER:
+    OVRE15:
+    OVRE14:
+    OVRE13:
+    OVRE12:
+    OVRE11:
+    OVRE10:
+    OVRE9:
+    OVRE8:
+    OVRE7:
+    OVRE6:
+    OVRE5:
+    OVRE4:
+    OVRE3:
+    OVRE2:
+    OVRE1:
+    OVRE0:
+
+  EMR:
+    TAG:
+    CMPFILTER:
+    CMPALL:
+    CMPSEL:
+    CMPMODE:
+
+  CWR:
+    HIGHTHRES:
+    LOWTHRES:
+
+  CGR:
+    GAIN15:
+    GAIN14:
+    GAIN13:
+    GAIN12:
+    GAIN11:
+    GAIN10:
+    GAIN9:
+    GAIN8:
+    GAIN7:
+    GAIN6:
+    GAIN5:
+    GAIN4:
+    GAIN3:
+    GAIN2:
+    GAIN1:
+    GAIN0:
+
+  COR:
+    DIFF15:
+    DIFF14:
+    DIFF13:
+    DIFF12:
+    DIFF11:
+    DIFF10:
+    DIFF9:
+    DIFF8:
+    DIFF7:
+    DIFF6:
+    DIFF5:
+    DIFF4:
+    DIFF3:
+    DIFF2:
+    DIFF1:
+    DIFF0:
+    OFF15:
+    OFF14:
+    OFF13:
+    OFF12:
+    OFF11:
+    OFF10:
+    OFF9:
+    OFF8:
+    OFF7:
+    OFF6:
+    OFF5:
+    OFF4:
+    OFF3:
+    OFF2:
+    OFF1:
+    OFF0:
+
+  CDR[%s]:
+    DATA:
+
+  ACR:
+    IBCTL:
+    TSON:
+
+  WPMR:
+    WPKEY:
+    WPEN:
+
+  WPSR:
+    WPVSRC:
+    WPVS:
+
+  RPR:
+    RXPTR:
+
+  RCR:
+    RXCTR:
+
+  RNPR:
+    RXNPTR:
+
+  RNCR:
+    RXNCTR:
+
+  PTCR:
+    TXTDIS:
+    TXTEN:
+    RXTDIS:
+    RXTEN:
+
+  PTSR:
+    TXTEN:
+    RXTEN:
